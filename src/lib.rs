@@ -891,6 +891,12 @@ extern "C" {
     pub fn Z3_mk_pble(c: Z3_context, num_args: ::libc::c_uint,
                       args: *const Z3_ast, coeffs: *mut ::libc::c_int,
                       k: ::libc::c_int) -> Z3_ast;
+    pub fn Z3_mk_pbeq(c: Z3_context, num_args: ::libc::c_uint,
+                      args: *const Z3_ast, coeffs: *mut ::libc::c_int,
+                      k: ::libc::c_int) -> Z3_ast;
+    pub fn Z3_mk_pbge(c: Z3_context, num_args: ::libc::c_uint,
+                      args: *const Z3_ast, coeffs: *mut ::libc::c_int,
+                      k: ::libc::c_int) -> Z3_ast;
     pub fn Z3_func_decl_to_ast(c: Z3_context, f: Z3_func_decl) -> Z3_ast;
     pub fn Z3_is_eq_func_decl(c: Z3_context, f1: Z3_func_decl,
                               f2: Z3_func_decl) -> Z3_bool;
